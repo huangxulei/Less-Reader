@@ -3,7 +3,8 @@ import App from './App.vue';
 //Pinia
 import { createPinia } from 'pinia';
 import piniaPersist from 'pinia-plugin-persist';
-
+//Router
+import { router } from './route/router';
 
 //状态管理
 const pinia = createPinia()
@@ -19,4 +20,4 @@ app.config.errorHandler = (err, vm, info) => {
 }
 
 
-app.use(pinia).mount('#app')
+app.use(pinia).use(router).mount('#app')

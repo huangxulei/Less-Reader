@@ -1,10 +1,10 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-
+import AppMain from '../AppMain.vue';
 
 const routes = [
     {
         path: '/',
-
+        component: AppMain
     }
 ]
 
